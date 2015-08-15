@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 14px/1.6 helvetica, sans-serif;
+}
+
+p, ul, div {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+p {
+    padding-bottom: 15px;
+    line-height: 1.6;
+}
+
+a {
+    color: black;
+}
+
+#header {
+    padding: 10px 5%;
+    background: #eeeeee;
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+#header p {
+    line-height: 1;
+    padding: 0;
+}
+
+#footer {
+    padding: 15px;
+    background-color: rgb(236, 242, 245);
+    color: rgb(121, 171, 211);
+    margin: 50px 0;
+}
+
+.content {
+    margin: 0 5%;
+}
+
+#loginForm {
+    padding: 15px;
+    background: #eee;
+}
+
+.alert {
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 25px;
+}
+
+.alert-error {
+    border-color: rgb(211, 143, 143);
+    background-color: rgb(255, 228, 228);
+    color: rgb(180, 0, 0);
+}
+
+.alert-info {
+    border-color: rgb(115, 199, 121);
+    background-color: rgb(212, 245, 214);
+    color: rgb(31, 146, 59);
+}
+
+.lang_switcher {
+    display: inline-block;
+    float: left;
+    line-height: 100%;
+
+}
+
+.lang_switcher li {
+    display: inline-block;
+}
+
+.lang_switcher li a {
+    font-size: 90%;
+}
+
+.lang_switcher .lang {
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+
+}
+
+.lang-ru {
+    background: url('../images/ru-RU.png');
+}
+
+.lang-en {
+    background: url('../images/en-GB.png');
+}
+
+table {
+    font-size: 85%;
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-spacing: 0;
+}
+
+th {
+    font-weight: bold;
+    vertical-align: top;
+    text-align: center;
+}
+
+td, th {
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+}
+
+tr:nth-child(2n) {
+    background-color: #eee;
+}
+
+td {
+    color: #333;
+}
+
+.actions {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    background-color: rgb(0, 163, 0);
+    padding: 5px 20px;
+    border: 0;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.btn-red {
+    background-color: rgb(163, 20, 0);;
+}
+
+.btn-blue {
+    background-color: rgb(0, 124, 176);;
+}
+
+.ml135px {
+    margin-left: 135px;
+}
+
+.tour .hot {
+    color: red;
+    font-size: 70%;
+
+}
+
+.tour p {
+    color: #333;
+    font-size: 90%;
+    padding: 5px 0 0 0;
+}
+
+.tour .inner {
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.tour {
+
+    margin-bottom: 25px;
+}
+
+.project-name span {
+    color: rgb(49, 128, 180);
+}
+
+.project-name {
+    color: rgb(224, 159, 43);
+    font-weight: normal;
+    padding-left: 75px;
+    background: url('../images/logo.jpg') no-repeat;
+    line-height: 65px;
+    vertical-align: middle;
+    background-size: 60px;
+
+}
+
+#style .menu {
+    position: absolute;
+    right: 0;
+    top: 25px;
+
+}
+
+#style .menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#style .menu li a {
+    color: rgb(93, 137, 162);
+}
+
+#style {
+    position: relative;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    padding-bottom: 15px;
+}
+
+.form-row label {
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    font-weight: bold;
+    text-align: right;
+    line-height: 1;
+}
+
+.form-row input[type=text],
+.form-row input[type=number],
+.form-row input[type=password],
+.form-row input[type=email],
+.form-row textarea,
+.form-row select {
+    width: 500px;
+    font-size: 110%;
+    padding: 5px;
+    margin: 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+#tours {
+    font-size: 0;
+}
+
+.tour-view {
+    width: 28.666666%;
+    vertical-align: top;
+    padding: 2%;
+    display: inline-block;
+    background: rgb(234, 243, 245);
+    font-size: 15px;
+    margin-right: 1%;
+    margin-bottom: 15px;
+}
+
+.tour-view:nth-child(3n) {
+    margin: 0;
+}
+
+.tour-view h3 {
+    margin: 0 0 5px 0;
+    font-weight: normal;
+    color: rgb(0, 90, 141);
+    font-size: 137%;
+}
+
+.tour-view .price {
+    float: right;
+}
+
+.tour-view .hot {
+    font-size: 70% !important;
+    color: red;
+    font-weight: bold;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+.tour-view p.details {
+    line-height: 1.4;
+    font-size: 90%;
+    color: #555;
+    height: 300px;
+}
+
+.tour-view .type {
+    padding: 7px 0 7px 45px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    line-height: 1;
+    vertical-align: top;
+    margin-bottom: 10px;
+    font-size: 103%;
+}
+
+.tour-view .not-logged {
+    display: inline-block;
+    width: 80%;
+    color: #999;
+    font-size: 100%;
+    text-decoration: underline;
+    line-height: 1;
+}
+
+.tour-view .type-shopping {
+    background-image: url("../images/shopping.png");
+}
+
+.tour-view .type-vacation {
+    background-image: url("../images/vacation.png");
+}
+
+.tour-view .type-excursion {
+    background-image: url("../images/excursion.png");
+}
+
+.discounted {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.tour-order {
+    margin-bottom: 15px;
+}
+
+.tour-order .total {
+    font-weight: bold;
+    font-size: 120%;
+    color: rgb(179, 143, 0);
+}
+
+.tour-order h2 {
+    margin: 0 0 10px 0;
+}
+
+.order-table {
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.block {
+    width: 28%;
+    margin-right: 2%;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2%;
+    background: #F0F0F0;
+    text-align: center;
+
+}
+
+.blocks {
+    font-size: 0;
+}
+
+.block-complete {
+    margin: 0;
+}
+
+.block h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+    color: rgb(91, 118, 139);
+}
+
+.block img {
+    width: 128px;
+    padding: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}

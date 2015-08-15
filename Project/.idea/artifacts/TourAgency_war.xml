@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TourAgency:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="TourAgencyt.war">
+      <element id="artifact" artifact-name="TourAgency:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

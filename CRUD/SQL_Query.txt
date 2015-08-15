@@ -1,0 +1,28 @@
+=============================================================
+                  Client DAO
+=============================================================
+SQL_QUERY = "SELECT client_info.is_regular FROM user  LEFT JOIN client_info ON user.id = client_info.user_id WHERE user.id = ?";
+=============================================================
+                  OrderDAO
+=============================================================
+SELECT_USER_ORDERS = "SELECT order.id, order.paid, user.username, tour.tourname, order.amount, order.purchase_date FROM `tour_purchase` `order` JOIN `tour` ON order.tour_id = tour.id JOIN user ON user.id = order.client_id WHERE order.client_id = ?";
+UPDATE_ORDER = "UPDATE tour_purchase SET paid=? WHERE id =?";
+CREATE_ORDER = "INSERT INTO tour_purchase (tour_id, paid,client_id, amount, purchase_date) VALUES (?, 0, ?, ?, ?)";
+SELECT_ORDERS = "SELECT order.id, order.paid, user.username, tour.tourname, order.amount, order.purchase_date FROM `tour_purchase` `order` JOIN `tour` ON order.tour_id = tour.id JOIN user ON user.id = order.client_id";
+=============================================================
+                  TourDAO
+=============================================================
+SELECT_ALL = "SELECT id, tourname, details, hot, price, regular_discount, type FROM tour";
+FIND_BY_ID = "SELECT id, tourname, details, hot, price, regular_discount, type FROM tour WHERE id = ?";
+CREATE_TOUR = "INSERT INTO tour(tourname, details, hot, price, regular_discount, type) VALUES(?, ?, ?, ?, ?, ?)";
+UPDATE_BY_ID = "UPDATE tour SET tourname=?, details=?, hot=?, price=?, regular_discount=?, type=? WHERE id=?";
+DELETE_TOUR_BY_ID = "DELETE FROM tour WHERE id = ?";
+==============================================================
+                  UserDAO
+==============================================================
+SELECT_ALL = "SELECT user.id, user.username, user.password, user.role_id, role.rolename FROM user JOIN role ON user.role_id = role.id";
+FIND_BY_ID = "SELECT user.id, user.username, user.password, user.role_id, role.rolename FROM user JOIN role ON user.role_id = role.id WHERE user.id = ?";
+FIND_BY_LOGIN_PASSWORD = "SELECT user.id, user.username, user.password, user.role_id, role.rolename FROM user JOIN role ON user.role_id = role.id WHERE user.username = ? AND user.password = ?";
+DELETE_BY_ID = "DELETE user WHERE id = ?";
+CREATE_USER = "INSERT INTO user (username, password, role_id) VALUES(?, ?, ?)";
+UPDATE_USER = "UPDATE users SET username = ?, password = ?, role_id = ? WHERE id = ?";

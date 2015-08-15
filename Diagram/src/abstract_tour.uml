@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.epam.tour</OriginalElement>
+  <nodes>
+    <node x="1625.9920582395766" y="401.2243547319656">com.epam.tour.exception.DAOTechnicalException</node>
+    <node x="384.8444738583719" y="297.1091992058239">com.epam.tour.dao.UserDAO</node>
+    <node x="1221.4592984778294" y="539.3878226340172">com.epam.tour.listener.ApplicationListener</node>
+    <node x="1173.608206485771" y="259.626075446724">com.epam.tour.entity.Tour</node>
+    <node x="510.5916611515552" y="540.4076770350758">com.epam.tour.connection.ConnectionPool</node>
+    <node x="703.1317008603575" y="540.407677035076">com.epam.tour.helper.ConstantsHelper</node>
+    <node x="1372.0" y="0.0">com.epam.tour.command.admin.DeleteTourCommand</node>
+    <node x="872.538716082065" y="251.90271343481135">com.epam.tour.builder.TourBuilder</node>
+    <node x="1433.608206485771" y="259.626075446724">com.epam.tour.entity.User</node>
+    <node x="499.8444738583719" y="297.1091992058239">com.epam.tour.dao.OrderDAO</node>
+    <node x="1257.608206485771" y="259.626075446724">com.epam.tour.entity.Order</node>
+    <node x="943.7167438782265" y="-93.81138318994067">com.epam.tour.filter.CommandAccessFilter</node>
+    <node x="161.0" y="0.0">com.epam.tour.command.client.AccountCommand</node>
+    <node x="884.307743216413" y="602.7213765718067">com.epam.tour.notification.creator.NotificationCreator</node>
+    <node x="1594.9715420251491" y="539.6604897418929">com.epam.tour.exception.AuthenticationLogicalException</node>
+    <node x="371.8444738583719" y="382.1091992058239">com.epam.tour.dao.AbstractDAO</node>
+    <node x="1349.608206485771" y="259.626075446724">com.epam.tour.entity.Role</node>
+    <node x="884.1105228325614" y="475.9179351422897">com.epam.tour.resource.MessageManager</node>
+    <node x="1302.108206485771" y="344.626075446724">com.epam.tour.entity.Entity</node>
+    <node x="854.0" y="0.0">com.epam.tour.command.LogoutCommand</node>
+    <node x="537.2514890800794" y="213.5360688285902">com.epam.tour.dao.OrderDAO.OrderDAOHolder</node>
+    <node x="1569.0" y="0.0">com.epam.tour.command.admin.UpdateTourCommand</node>
+    <node x="505.74255459960295" y="599.9999999999998">com.epam.tour.filter.JspProtectionFilter</node>
+    <node x="370.95367306419587" y="130.26935804103232">com.epam.tour.dao.ClientDAO</node>
+    <node x="0.0" y="0.0">com.epam.tour.command.client.OrderCommand</node>
+    <node x="850.4791528788883" y="344.0807412309728">com.epam.tour.builder.TourBuilder.TourBuilderHolder</node>
+    <node x="722.0291197882198" y="475.50893448047657">com.epam.tour.resource.PathManager</node>
+    <node x="663.0" y="0.0">com.epam.tour.command.ViewToursCommand</node>
+    <node x="473.83057577763066" y="475.03441429516863">com.epam.tour.resource.DBConfigurationManager</node>
+    <node x="503.0" y="0.0">com.epam.tour.command.LoginCommand</node>
+    <node x="1771.0" y="0.0">com.epam.tour.command.admin.ManagerCommand</node>
+    <node x="346.5645268034415" y="214.69225678358708">com.epam.tour.dao.UserDAO.UserDAOHolder</node>
+    <node x="710.8868299139643" y="-91.36267372600929">com.epam.tour.logic.AuthenticationLogic</node>
+    <node x="1078.94705493051" y="604.7610853739243">com.epam.tour.notification.tag.FlashesTag</node>
+    <node x="338.0" y="0.0">com.epam.tour.command.EmptyCommand</node>
+    <node x="881.9192587690272" y="539.3878226340171">com.epam.tour.notification.service.NotificationService</node>
+    <node x="1655.1065519523497" y="275.30443414956983">com.epam.tour.exception.BuildException</node>
+    <node x="268.8444738583719" y="297.1091992058239">com.epam.tour.dao.TourDAO</node>
+    <node x="1024.0" y="0.0">com.epam.tour.command.admin.AddTourCommand</node>
+    <node x="856.0" y="174.4559894109861">com.epam.tour.command.ActionCommand</node>
+    <node x="1634.0244870946394" y="336.5982792852416">com.epam.tour.exception.DAOLogicalException</node>
+    <node x="1205.0" y="0.0">com.epam.tour.command.admin.OrdersCommand</node>
+    <node x="1619.8405029781604" y="467.279285241562">com.epam.tour.exception.ConnectionPoolException</node>
+    <node x="840.6841048542983" y="-179.88947823068779">com.epam.tour.servlet.FrontController</node>
+    <node x="1365.3778954334875" y="180.67769688947703">com.epam.tour.notification.entity.Notification.Type</node>
+    <node x="712.490403706155" y="602.3123759099934">com.epam.tour.helper.RequestHelper</node>
+    <node x="1229.547981469226" y="184.5552614162806">com.epam.tour.entity.TourType</node>
+    <node x="1079.0297816015882" y="540.1350099272005">com.epam.tour.notification.entity.Notification</node>
+    <node x="1076.6704169424224" y="475.64526803441413">com.epam.tour.resource.LocaleManager</node>
+    <node x="149.22435473196583" y="213.39973527465247">com.epam.tour.dao.TourDAO.TourDAOHolder</node>
+    <node x="347.6882859033754" y="540.1350099272004">com.epam.tour.filter.EncodingFilter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.epam.tour.command.admin.AddTourCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="13.272727272727252" y="-17.5" />
+      <point x="942.2727272727273" y="55.0" />
+      <point x="1104.5" y="55.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.client.AccountCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="-53.09090909090912" y="-17.5" />
+      <point x="875.9090909090909" y="85.0" />
+      <point x="239.5" y="85.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.admin.ManagerCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="66.36363636363637" y="-17.5" />
+      <point x="995.3636363636364" y="95.0" />
+      <point x="1852.0" y="95.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.dao.UserDAO" target="com.epam.tour.dao.AbstractDAO">
+      <point x="0.0" y="-17.5" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.client.OrderCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="-66.36363636363637" y="-17.5" />
+      <point x="862.6363636363636" y="95.0" />
+      <point x="70.5" y="95.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.dao.OrderDAO" target="com.epam.tour.dao.AbstractDAO">
+      <point x="40.333333333333314" y="-17.5" />
+      <point x="472.67780719170526" y="357.1091992058239" />
+      <point x="551.8444738583719" y="357.1091992058239" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.LoginCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="-26.545454545454504" y="-17.5" />
+      <point x="902.4545454545455" y="65.0" />
+      <point x="573.0" y="65.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.admin.UpdateTourCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="53.09090909090912" y="-17.5" />
+      <point x="982.0909090909091" y="85.0" />
+      <point x="1660.0" y="85.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.ViewToursCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="-13.272727272727252" y="-17.5" />
+      <point x="915.7272727272727" y="55.0" />
+      <point x="748.5" y="55.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.admin.OrdersCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="26.545454545454504" y="-17.5" />
+      <point x="955.5454545454545" y="65.0" />
+      <point x="1278.5" y="65.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.LogoutCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="0.0" y="-17.5" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.entity.Order" target="com.epam.tour.entity.Entity">
+      <point x="-8.875" y="-17.5" />
+      <point x="1328.733206485771" y="314.626075446724" />
+      <point x="1293.608206485771" y="314.626075446724" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.dao.TourDAO" target="com.epam.tour.dao.AbstractDAO">
+      <point x="-40.33333333333337" y="-17.5" />
+      <point x="392.0111405250385" y="357.1091992058239" />
+      <point x="316.8444738583719" y="357.1091992058239" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.admin.DeleteTourCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="39.81818181818187" y="-17.5" />
+      <point x="968.8181818181819" y="75.0" />
+      <point x="1460.5" y="75.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.command.EmptyCommand" target="com.epam.tour.command.ActionCommand">
+      <point x="-39.81818181818187" y="-17.5" />
+      <point x="889.1818181818181" y="75.0" />
+      <point x="410.5" y="75.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.entity.Role" target="com.epam.tour.entity.Entity">
+      <point x="8.875" y="-17.5" />
+      <point x="1346.483206485771" y="314.626075446724" />
+      <point x="1381.608206485771" y="314.626075446724" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.entity.User" target="com.epam.tour.entity.Entity">
+      <point x="26.625" y="-17.5" />
+      <point x="1364.233206485771" y="324.626075446724" />
+      <point x="1465.108206485771" y="324.626075446724" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="com.epam.tour.entity.Tour" target="com.epam.tour.entity.Entity">
+      <point x="-26.625" y="-17.5" />
+      <point x="1310.983206485771" y="324.626075446724" />
+      <point x="1205.608206485771" y="324.626075446724" />
+      <point x="0.0" y="17.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7736815156169995" x="966.5" y="230.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

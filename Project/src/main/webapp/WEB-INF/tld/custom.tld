@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+        http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>custom</short-name>
+    <uri>http://epam.com/taglib/custom</uri>
+    <tag>
+        <name>notifications</name>
+        <tag-class>com.epam.tour.notification.tag.FlashesTag</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+
+    <function>
+        <name>have_notifications</name>
+        <function-class>com.epam.tour.notification.service.NotificationService</function-class>
+        <function-signature>boolean haveNotifications(javax.servlet.http.HttpSession)</function-signature>
+    </function>
+
+    <function>
+        <name>user</name>
+        <function-class>com.epam.tour.logic.AuthenticationLogic</function-class>
+        <function-signature>com.epam.tour.entity.User user(javax.servlet.http.HttpServletRequest)
+        </function-signature>
+    </function>
+
+
+</taglib>

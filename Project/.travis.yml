@@ -1,0 +1,14 @@
+language: java
+
+export CODECOV_TOKEN=dd571bfd-9127-426d-910e-576a3f8c8d61
+
+after_test:
+  - bash <(curl -s https://codecov.io/bash)
+
+# need to override travis 'install' since it will try gpg sign and fail.
+install: mvn clean compile -DmemoryInMB=2000 -Dcores=2 -DtimeInMinutesPerClass=3 evosuite:generate evosuite:export evosuite:prepare test
+
+branches:
+  except:
+      - mvn-repo
+

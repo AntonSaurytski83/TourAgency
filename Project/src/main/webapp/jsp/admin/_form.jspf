@@ -1,0 +1,51 @@
+<%@ page language="java" pageEncoding="utf8" contentType="text/html;charset=UTF-8" %>
+<script type="text/javascript" src="${pageContext.servletContext.contextPath}/js/validation.js"></script>
+<form method="post" autocomplete="off">
+    <div class="form-row">
+        <label for="nameForm"><fmt:message key="tour_form.tourname"/></label>
+        <input id="nameForm" name="tourname" type="text" maxlength="30" value="${tour.tourname}" onKeyUp="check('name')"/>
+        <b style="color: gray; font-size: 11px;"><i style="color: red">*</i>-<fmt:message key="info.warning"/></b>
+        <br/><b id="name" style="color: red; font-size: 10px; margin-left: 145px">
+        <fmt:message key="tour.name"/>
+    </b>
+
+    </div>
+    <div class="form-row">
+        <label for="type"><fmt:message key="tour_form.type"/></label>
+        <select id="type" name="type">
+            <c:forEach var="type" items="${tourTypes}">
+                <option value="${type.id}" <c:if test="${type.id eq tour.type.id}"> selected</c:if>>${type}</option>
+            </c:forEach>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="detailsForm"><fmt:message key="tour_form.details"/></label>
+        <textarea rows="15" id="detailsForm" maxlength="1200" onKeyUp="check('details')" name="details">${tour.details}</textarea>
+        <b style="color: gray; font-size: 11px;"><i style="color: red">*</i>-<fmt:message key="info.warning"/></b>
+        <br/><b id="details" style="color: red; font-size: 10px; margin-left: 145px">
+        <fmt:message key="tour.details"/>
+    </b>
+    </div>
+    <div class="form-row">
+        <label for="hot"><fmt:message key="tour_form.hot"/></label>
+        <input id="hot" type="checkbox" name="hot" value="1" <c:if test="${tour.hot eq true}">checked</c:if>/>
+    </div>
+    <div class="form-row">
+        <c:choose>
+            <c:when test="${tour.price > 0}">
+                <c:set var="price" value="${tour.price}"/>
+            </c:when>
+            <c:otherwise>
+                <c:set var="price" value="500"/>
+            </c:otherwise>
+        </c:choose>
+        <label for="price"><fmt:message key="tour_form.price"/></label>
+        <input id="price" type="number" name="price" value="${price}"/>
+    </div>
+    <div class="form-row">
+        <label for="discount"><fmt:message key="tour_form.discount"/>(%)</label>
+        <input id="discount" type="number" name="regular_discount" value="${tour.regularDiscount}"/>
+    </div>
+    <input class="ml135px btn" name="submit" type="submit" value="<fmt:message key="form_submit"/>"/>
+    <a href="app?c=manager&lang=${locale}"><fmt:message key="tour_form.back"/></a>
+</form>

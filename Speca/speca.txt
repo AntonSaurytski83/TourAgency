@@ -1,0 +1,17 @@
+
+#######   SPECIFICATION  #########
+
+Narrative:
+To order and pay trip easy
+As a customer
+I want to create the usability webapp
+
+Meta:
+@author   Anton Saurytski
+@project  Tour Agency
+
+Scenario: for the order of a trip the buyer has to login under the name and make the order
+
+Given: tour
+When : admin is checked the tour is valid and paid
+Then : the customer can see status of the order

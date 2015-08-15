@@ -1,0 +1,42 @@
+<%@ taglib prefix="n" uri="http://epam.com/taglib/custom" %>
+<div id="header">
+    <ul class="lang_switcher">
+        <c:forEach items="${locales}" var="locale">
+            <li class="lang lang-${locale.value}"><a href="${pageContext.servletContext.contextPath}/index.jsp?lang=${locale.value}">${locale.key}</a></li>
+        </c:forEach>
+    </ul>
+    <c:choose>
+        <c:when test="${not empty user}">
+            <c:set var="rolename" value="${user.role.rolename}"/>
+            <p><fmt:message key="user.welcome"><fmt:param value="${user.username}"/> </fmt:message> [<a
+                    href="app?c=logout&lang=${locale}"><fmt:message key="user.logout"/></a>]</p>
+        </c:when>
+        <c:otherwise>
+            <p><fmt:message key="guest.welcome"/> [<a href="app?c=login&lang=${locale}"><fmt:message
+                    key="user.login"/></a>]</p>
+        </c:otherwise>
+    </c:choose>
+</div>
+<div id="style" class="content">
+    <h1 class="project-name"><span>Travel</span> Agency</h1>
+    <ul class="menu">
+        <li><a href="app?lang=${locale}"><fmt:message key="menu.page.main"/></a></li>
+        <li><a href="app?c=tours&lang=${locale}"><fmt:message key="menu.page.tours"/></a></li>
+        <c:if test="${rolename eq 'admin'}">
+            <li><a href="app?c=manager&lang=${locale}"><fmt:message key="menu.page.manager"/></a></li>
+            <li><a href="app?c=orders&lang=${locale}"><fmt:message key="menu.page.orders"/></a></li>
+        </c:if>
+        <c:if test="${rolename eq 'client'}">
+            <li><a href="app?c=account&lang=${locale}"><fmt:message key="menu.page.account"/></a></li>
+        </c:if>
+    </ul>
+</div>
+<div class="hr"></div>
+<c:if test="${n:have_notifications(pageContext.session)}">
+    <div class="content">
+        <n:notifications>
+            <p class="alert alert-{type}">{message}</p>
+        </n:notifications>
+    </div>
+</c:if>
+
